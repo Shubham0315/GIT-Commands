@@ -113,7 +113,7 @@ c. Remove file only from workspace
   ![image](https://github.com/user-attachments/assets/8c621ef8-18ce-4e20-b399-5698e2edcadb)
 
   - **Scenario 3 :- To see differnce between file in staging area and last commit**
-  -
+
      - Add the workspace content to staging using "git add ."
      - Then we execute --> git diff --staged HEAD index.txt
 
