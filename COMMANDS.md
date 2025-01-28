@@ -76,7 +76,7 @@ c. Remove file only from workspace
 - Used to compare files between any of the 4 stages of VCS (Workspace, staging, local, remote)
 - If we append the staged file in local so before staging it we can check diff for the exact added/removed content
 
-  - Scenario 1
+  -_ Scenario 1_
   
     - Create new folder (SampleProject), create sample index.txt in that using vi
     - This file will be their in your workspace 
