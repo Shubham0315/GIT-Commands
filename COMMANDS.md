@@ -103,8 +103,7 @@ c. Remove file only from workspace
 	- +1,2 --> in workspace we have 1 extra line and total 2 lines ( + means target)
 
   - **Scenario 2 :- To see difference in file content between working directory and last commit**
-  -
-
+  
      - Now lets commit the staging file in local repo and then check diff between local and workspace
      - $ git commit -m "file commit file contain 1 line" --> staging file will move to local
      - Now add some text to workspace file and then comapre diff between workspace and local (Last commit is always represented using HEAD keyword)
