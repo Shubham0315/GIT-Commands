@@ -53,7 +53,7 @@
 
 ![image](https://github.com/user-attachments/assets/0a8e8985-7e7d-428c-8fe1-0bf78a37ce5a)
 
-7. git rm
+**7. git rm**
 - Create 2 files in our system repo and stage just one of them (git add)
 
 ![image](https://github.com/user-attachments/assets/2a9db1e4-569f-42a1-90fa-5c49cd495939)
@@ -72,4 +72,21 @@ c. Remove file only from workspace
 	Command :- **rm $file**
 ![image](https://github.com/user-attachments/assets/5b4eac15-2dc7-4b07-b3b0-f1d8d31db3bc)
 
+**8. git diff**
+- Used to compare files between any of the 4 stages of VCS (Workspace, staging, local, remote)
+- If we append the staged file in local so before staging it we can check diff for the exact added/removed content
+
+  - Scenario 1
+     	    - Create new folder (SampleProject), create sample index.txt in that using vi
+	    - This file will be their in your workspace 
+	    - Now we can initialize empty git repo for this file
+	    - Now we have to add this file into staging area using git add, check status using git status
+    	    - Now the file in ur workspace will be there in your staging area
+
+    ![image](https://github.com/user-attachments/assets/924a33cb-0ece-446e-ab5a-789295b4dc1a)
+
+	    - Now if we edit the file in our workspace those changes will not be there in staging (check using git status)
+	    - Here we can check diff between workspace and staging using :-  **git diff $file**
+
+    ![image](https://github.com/user-attachments/assets/c9112eaf-9958-4fda-868e-5a612c1449ef)
 
