@@ -76,7 +76,8 @@ c. Remove file only from workspace
 - Used to compare files between any of the 4 stages of VCS (Workspace, staging, local, remote)
 - If we append the staged file in local so before staging it we can check diff for the exact added/removed content
 
-  -_ Scenario 1_
+  - **Scenario 1 :- To check diff between files in workspace and staging**
+  -
   
     - Create new folder (SampleProject), create sample index.txt in that using vi
     - This file will be their in your workspace 
@@ -91,3 +92,31 @@ c. Remove file only from workspace
 
     ![image](https://github.com/user-attachments/assets/c9112eaf-9958-4fda-868e-5a612c1449ef)
 
+  	- a/index.txt is target ()
+	- b/index.txt is source (staging)
+ 	- cf6e18b hash of file content from source (staging)
+	- ddf1f36 hash of file content from target (workspace)
+	- 100644 git file mode ( 100 represents type of file and 644 is permissions)
+  	-  --- a/index.txt --> source files missing some lines (staging)
+	- +++ b/index.txt --> new lines added in destination file (workspace)
+ 	- -1 --> in staging we have only one line ( - means source)
+	- +1,2 --> in workspace we have 1 extra line and total 2 lines ( + means target)
+
+  - **Scenario 2 :- To see difference in file content between working directory and last commit**
+  -
+
+     - Now lets commit the staging file in local repo and then check diff between local and workspace
+     - $ git commit -m "file commit file contain 1 line" --> staging file will move to local
+     - Now add some text to workspace file and then comapre diff between workspace and local (Last commit is always represented using HEAD keyword)
+     - git diff HEAD index.txt --> head is latest commit in local and index.txt is file in workspace we're comparing with
+ 
+  ![image](https://github.com/user-attachments/assets/8c621ef8-18ce-4e20-b399-5698e2edcadb)
+
+  - **Scenario 3 :- To see differnce between file in staging area and last commit**
+  -
+     - Add the workspace content to staging using "git add ."
+     - Then we execute --> git diff --staged HEAD index.txt
+
+  ![image](https://github.com/user-attachments/assets/6207f272-0cbc-40ae-8db0-8c760397de12)
+
+  
