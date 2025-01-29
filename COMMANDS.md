@@ -146,7 +146,8 @@ c. Remove file only from workspace
 - Unstaged changes means the changes which are part of workspace are not in staging area
 - Git checkout command is used only for workspace. Basically checkout means undo
 
-e.g :-  - Create one file and add some lines and then initialize the same. Add it to staging and commit into local. Now the file is tracked
+e.g :-  
+	- Create one file and add some lines and then initialize the same. Add it to staging and commit into local. Now the file is tracked
 	- Now make some changes to file in workspace. So staging and local wont have updated changes (unstaged changes)
 	- Now to discard these unstaged changes (checkout) :- **git checkout --file**
  	- Checkout is used only for tracked files not untracked ones
