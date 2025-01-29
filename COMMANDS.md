@@ -117,7 +117,7 @@ c. Remove file only from workspace
 
   ![image](https://github.com/user-attachments/assets/6207f272-0cbc-40ae-8db0-8c760397de12)
 
-    - **Scenario 4 :- To see the difference in file content between specific commit and working directory copy**
+  - **Scenario 4 :- To see the difference in file content between specific commit and working directory copy**
 
      - Commit the staging updated file into local
      - The latest commit is represented by HEAD (above line), the first commit will contain 1 line only while latest have 3 lines
@@ -128,13 +128,13 @@ c. Remove file only from workspace
      - Once we know the commit id of first commit -->  git diff $id $filename
 							$ git diff bba2ee1 index.txt
 
-    - **Scenario 5 :- To see the Difference in file content between specific commit and staging area copy**
+ - **Scenario 5 :- To see the Difference in file content between specific commit and staging area copy**
       
      - Take same commit id from Scenario-4
      - Command :- **git diff --staged $commit**
      - Here we dont need to give filename in command as it will compare staged file with commit id
 
-    - **Scenario 6 :- To check difference between two specific commit**
+ - **Scenario 6 :- To check difference between two specific commit**
  
      - Command :- **git diff $commit1 $commit2 $filename**
 
