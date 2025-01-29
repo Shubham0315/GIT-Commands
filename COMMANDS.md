@@ -151,5 +151,52 @@ e.g :-
 	- Now make some changes to file in workspace. So staging and local wont have updated changes (unstaged changes)
 	- Now to discard these unstaged changes (checkout) :- **git checkout --file**
  	- Checkout is used only for tracked files not untracked ones
- 
+![image](https://github.com/user-attachments/assets/7afaf1d2-1185-47e8-b964-d17ae24ffbf9)
+![image](https://github.com/user-attachments/assets/7e89fddb-411e-447f-8af5-2a9d63175465)
+
+- If we've multiple commits in a file and want to go back to commit #1
+  Command :- **git checkout $CommitID1 -- file**
+- Again if we want to go back to 2nd commit
+  Command :- **git checkout master -- file** (master as it is head commit for specific branch)
+
+ ![image](https://github.com/user-attachments/assets/615956fa-7cc6-41de-a65d-844e22d3964a)
+
+**10. git reset**
+- To remove changes from staging area which are unwanted. To undo commits at repository level (staging to local commits undo operation)
+- It is opposite of git add command
+
+![image](https://github.com/user-attachments/assets/f68df5c8-c112-43a9-92fc-4837fd229e7b)
+
+- To undo changes at repo level :- **git reset <mode> <commit id>**.
+- Mode will decide whether the changes are gonna be removed from staging area and working directory or not
+
+- a. reset with --mixed mode
+  - It is default mode
+  - To discard commits in local and staging area. It wont touch workspace
+  - When we discard changes from local it will discard them from staging as well 
+  - Command :- **git reset --mixed $(commitId-1)**
+  - Here whichever commit we have to remove from local/staging, provide the previous commit id of that to the command. So it will remove any new commits above that commit.
+  - Even if the file is removed from staging/local, it will be available in workspace as it will not touch there.
+
+
+![image](https://github.com/user-attachments/assets/68db5162-d791-4f87-bede-5ce0649c60d2)
+
+- b. reset with --soft mode
+  - Exactly same as --mixed options. But when we discard changes from local, changes are available in workspace and staging. Means it wont touch staging and woskspace
+  - As changes are already present in staging area, we just have to use commit to revert back
+  - Command :- **git reset --soft $(commitId-1)**
+
+![image](https://github.com/user-attachments/assets/668d54a9-a240-4c46-a230-9ca6c9a22483)
+
+- c. reset with --hard option (very dangerous)
+  - Works same as --mixed except changes will be removed from everywhere (local, staging, workspace)
+  - It is impossible to revert back so take care while using it
+  - Command :- **git reset --hard $(commitId-1)**
+
+![image](https://github.com/user-attachments/assets/5bd697c0-e878-45e6-a5db-92fce84d8ed7)
+
+
+11. git show
+- 
+
 
