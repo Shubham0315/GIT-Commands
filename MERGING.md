@@ -97,3 +97,9 @@ To check commit graphically
 
 ![image](https://github.com/user-attachments/assets/b2258a05-1618-47e5-a210-15475bca005c)
 
+Delete Branch
+-
+- Command :- git branch -d feature
+- After deleting branch, when we see past commits, feature branch seems erased
+
+![Uploading image.png…]()
