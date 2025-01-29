@@ -10,12 +10,12 @@ Fast Forward Merge
 - In short, in this method, we only do changes in child/feature branch not in master. No commits will be done in master after creation of child. So by this, there are no chances of getting any conflicts in code
 
 **DEMO**
-- Create new empty repository and initialize it (master branch). Add 2 files and stage,commit them. So master branch will have 2 files and 2 commits.
+- Create new empty repository and initialize it (master branch). Add 2 files and stage,commit them. So master branch will have 2 files and 2 commits. (Add and commits should be one by one)
 
 ![image](https://github.com/user-attachments/assets/8e6495a9-8732-4b64-adce-39f5af56b70c)
 ![image](https://github.com/user-attachments/assets/7a2ff261-7eb9-4201-81d1-9a3081897e03)
 
-- Create new branch "feature". Add 2 files and stage, commit them. So child branch will have 4 commits and 4 files in total.
+- Create new branch "feature". Add 2 files and stage, commit them. So child branch will have 4 commits and 4 files in total. (Add and commits should be one by one)
 
 ![image](https://github.com/user-attachments/assets/04656b56-a45b-4db7-88f3-48feff893caa)
 ![image](https://github.com/user-attachments/assets/690a0b84-68b5-4b5a-a260-a4107baf5c15)
