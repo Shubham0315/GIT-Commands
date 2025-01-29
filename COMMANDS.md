@@ -130,7 +130,7 @@ c. Remove file only from workspace
 
  - **Scenario 5 :- To see the Difference in file content between specific commit and staging area copy**
       
-     - Take same commit id from Scenario-4
+    - Take same commit id from Scenario-4
      - Command :- **git diff --staged $commit**
      - Here we dont need to give filename in command as it will compare staged file with commit id
 
