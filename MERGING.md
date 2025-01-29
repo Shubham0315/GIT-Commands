@@ -87,7 +87,7 @@ Resolving Merge Conflicts
 ![image](https://github.com/user-attachments/assets/bb770f3e-64e7-447f-9142-41ba5b141d7f)
 
 - When we open the file, we can clearly see conflict there. We have to open the file and manually resolve the conflict (erase unwanted lines)
-= If I want to have both conflicting lines, I can manually destroy the lines using vi
+- If I want to have both conflicting lines, I can manually destroy the lines using vi
 
 ![image](https://github.com/user-attachments/assets/051b75b9-c558-4d1e-acbd-9a8d83b0b54d)
 
