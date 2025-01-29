@@ -123,14 +123,14 @@ c. Remove file only from workspace
      - The latest commit is represented by HEAD (above line), the first commit will contain 1 line only while latest have 3 lines
      - Add one more line to workspace so worskpace have 4 lines and local have 3
      - Lets compare file in workspace and 1st commit. 
-     - For this we need commit id's of first commit --> git log --oneline
+     - For this we need commit id's of first commit :- git log --oneline
 
-     - Once we know the commit id of first commit -->  git diff $id $filename
+     - Once we know the commit id of first commit :-  **git diff $id $filename**
 							$ git diff bba2ee1 index.txt
 
  - **Scenario 5 :- To see the Difference in file content between specific commit and staging area copy**
       
-    - Take same commit id from Scenario-4
+     - Take same commit id from Scenario-4
      - Command :- **git diff --staged $commit**
      - Here we dont need to give filename in command as it will compare staged file with commit id
 
