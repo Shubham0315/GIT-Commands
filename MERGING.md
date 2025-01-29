@@ -62,6 +62,38 @@ Three Way Merge
 
 Resolving Merge Conflicts
 -
-- 
+- - As usual, create new project and initialize it
+**When we create new feature branch, the commits in master are inherited to feature always**
+- Create one file and add one line in first commit. Then add one more line to it in second commit
 
+![image](https://github.com/user-attachments/assets/5a024267-d510-459f-85ad-389bf6d92e8a)
+![image](https://github.com/user-attachments/assets/c1e9926b-bf32-4098-8a43-7d3b76a52588)
+
+- Now create feature branch so all commits in master are inherited to it
+
+![image](https://github.com/user-attachments/assets/3ba9b0c7-03f4-42e4-9d1c-e660e02930d5)
+
+- Now in feature branch add one more line to the inherited file and stage, commit it to local. So feature branch will have 3 commits while master will have 2
+
+![image](https://github.com/user-attachments/assets/b2c5cd78-8b3f-4091-ae3d-2daddf263415)
+
+- Now switch back to master and commit one more line there so now master will also have 3 commits
+
+![image](https://github.com/user-attachments/assets/4a3eff5d-d119-4048-b809-b2a403a15938)
+![image](https://github.com/user-attachments/assets/b24afabc-a5dc-4002-9ebc-18ac8d5c7e0a)
+
+- Now we've to merge feature branch with master, when we try to do so we get error message as resolve the conflicts and then merge.
+
+![image](https://github.com/user-attachments/assets/bb770f3e-64e7-447f-9142-41ba5b141d7f)
+
+- When we open the file, we can clearly see conflict there. We have to open the file and manually resolve the conflict (erase unwanted lines)
+= If I want to have both conflicting lines, I can manually destroy the lines using vi
+
+![image](https://github.com/user-attachments/assets/051b75b9-c558-4d1e-acbd-9a8d83b0b54d)
+
+To check commit graphically
+-
+- Command :- **git log --oneline --graph**
+
+![image](https://github.com/user-attachments/assets/b2258a05-1618-47e5-a210-15475bca005c)
 
