@@ -196,7 +196,29 @@ e.g :-
 ![image](https://github.com/user-attachments/assets/5bd697c0-e878-45e6-a5db-92fce84d8ed7)
 
 
-11. git show
-- 
+**11. git show**
+- If we have done 3 commits in our branch and have to check the commit in previous commits, we can use git show
+- Command :- **git show $CommitID:$file**
+**We provide file here as there can be multiple files committed under single commit**
 
+![image](https://github.com/user-attachments/assets/aeba301b-9984-48c3-b679-cb8a482fd492)
 
+**12. git restore**
+- There are high chances of working on existing files and repositories in an organization.(Sensitive and critical files)
+  Suppose in a file we've added some changes which are not required and we're unaware of the commit done
+- Here we can do 2 things to get previous working version of file
+
+Case-1:- 
+  **git restore $File or .** :- this doesn't need file to be staged and committed, we can do from workspace
+  
+Case-2:-
+- But if we've added changes using git add then we can follow below method.
+  If we've done changes to file which are not required and added the file to staging, use restore as below
+  	**git restore --staged $File or .**  --> Here if we check git status, it will show our file is moved back from staging to workspace
+ 	git restore $File or . --> to get previous version in workspace
+
+Case-3:- 
+- If we've added changes to staging (not committed) and after staging we added more changes to file in workspace which are unnecessary
+  We've added file to staging and commit changes to file in workspace and if we check status it shows file is modified
+
+	**git restore --worktree $File or .**   --> our mistakes are removed
