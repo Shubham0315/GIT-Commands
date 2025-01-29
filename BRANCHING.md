@@ -10,3 +10,21 @@
 
 - But here every branch is isolated means independent. Means files added to sub branches will not be there in master branch and vice versa. This is until we merge the code
 
+**1. git branch**
+- To view available branches
+- If we get * before branch in output of this command, it shows active branch
+- We can also execute "git status" to check branch
+
+**2. git branch $branch**
+- To create new branch
+- As soon as we create new branch, all files in master branch will be inherited to the new branch
+
+**3. git checkout**
+- Switch from one branch to another
+  git checkout $branch
+- Now branch to which we are switched is active one instead of master
+
+**4. git checkout -b $branch**
+- Create new branch and switch to it in one command
+
+![image](https://github.com/user-attachments/assets/3959ca58-e841-464e-81e1-457b2dae905c)
