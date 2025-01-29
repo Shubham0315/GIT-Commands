@@ -138,4 +138,17 @@ c. Remove file only from workspace
  
      - Command :- **git diff $commit1 $commit2 $filename**
 
+**9. git checkout**
+- We could have used git show here but having multiple files and if we need all file details from previous commit, its not feasible using "**git show**". So git checkout is useful here
+- Also git show can work for small files so as to read on terminal. For 1000s of line of code, its not good.
+- Used to **discard unstaged changes in the tracked files of working directory**
+- Until and unless files are not added to staging or local repository, they are untracked. At least once the file in workspace is added to staging or local, then it is tracked
+- Unstaged changes means the changes which are part of workspace are not in staging area
+- Git checkout command is used only for workspace. Basically checkout means undo
+
+e.g :-  - Create one file and add some lines and then initialize the same. Add it to staging and commit into local. Now the file is tracked
+	- Now make some changes to file in workspace. So staging and local wont have updated changes (unstaged changes)
+	- Now to discard these unstaged changes (checkout) :- **git checkout --file**
+ 	- Checkout is used only for tracked files not untracked ones
  
+
