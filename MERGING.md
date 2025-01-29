@@ -29,7 +29,8 @@ Fast Forward Merge
 ![image](https://github.com/user-attachments/assets/b4020493-3fbc-45c2-98c0-7fc168682edb)
 
 
-**2. Three Way Merge**
+Three Way Merge
+-
 - Here parallel development will happen in master and child branch
 - Suppose we created a child branch from master branch which have 2 commits and added 2 commits in child branch. And then merge the code from child to master. Parallely, if we commit changes in master branch.
 - There will be chances of conflict here as some changes in master (after 2nd commit in master) may not be there in child or some commits in child (after 2nd commit in child) may not be there in master when merged at the end. Or the file in master before creation of child gets modified in feature branch (some lines added), it can be conflicting once merged to master
