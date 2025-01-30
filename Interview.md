@@ -75,6 +75,65 @@
 
 
 12. What is git stash?
+- We're working on our main code in master branch but we want to modify something without interrupting master branch. This is done by "Git Stash"
+- It allows to modify files by switching to other branch to work on something else.
+- This saves our uncommitted changes so that we can work on something else or switch branches without losing our progress.
+  - We can also apply the stashed changes to our working directory and also do a "pop" to remove stash entry adter applying the changes
+
+13. Commands to remove files in git
+- **git rm file** :- from workspace and staging
+- **git rm --cacahed file** :- only from staging
+- **rm file** :- from workspace
+
+14. git checkout
+- Various uses :- switch between branches and restore files in working directory
+- Command to switch branch :- **git checkout -b branch**
+
+- Also used to restore files to the state in a particular commit, branch or tag. Useful when we want to discard changes in working directory for specific files
+  - Command :- **git checkout -- file**
+- To restore to specific commit :- **git checkout commit_id -- file**
+
+- It is also used to discard unstaged changes in the tracked files in workspace
+
+15. What is git reset?
+- Used to remove unwanted changes from staging and to undo commits from repository level
+- 3 modes :- hard, soft, mixed --> all explained
+
+16. Explain git branching commands
+- git branch :- to view available branches
+- git branch $branch :- to create new branch from master
+- git checkout $branch :- switch branch
+- git checkout -b $branch :- to create new branch and switch to it
+- git branch -d $branch :- to delete branch
+
+17. Explain git merging techniques
+- Fast forward merge and 3 way merge
+
+18. How to resolve conflicts in git?
+- Explained in md
+
+19. What is git rebase?
+- Explained in md
+
+20. Difference between fast forward and 3 way merge
+- If from creation of child branch to merging, if no commit happens to master branch then it is "Fast Forward Merge". If we commit the changes parallely in master as well, it is 3 way merge
+- Fast forward is linear while 3 way is non linear
+- In FF for every commit there is only 1 parent commit. In 3 way there can be mulyiple parent commits.
+
+21. Difference between merge and rebase
+- Everytime we can go for merge whether there are conflicts or not. After merging and resolving we can push to remote. In normal merge, history is also preserved
+- Rebase can be only used within local. Only you are responsible for your changes and can create multiple branches and rebase them as needed. So advisable not to use rebase for remote repository as multiple developers can be using the master branch. In rebase history is not maintained as feature gets vanished
+- Only if you want to follow linear, then go for rebase
+- In merge history is preserved, not in rebase
+- Merge Can be used for 3 way or FF while rebase only for FF
+
+22. How to find list of files that have been changed in specific commit?
+- Command :- git diff-tree -r $commit_id
+  - -r allows command to list individual files
+
+![image](https://github.com/user-attachments/assets/c7ecad11-5f34-402d-80c8-161ed5a1b233)
+
+23. Difference between git and SVN
 - 
 
 
