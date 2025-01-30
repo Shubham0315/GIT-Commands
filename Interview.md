@@ -209,7 +209,8 @@
 - Command :- **git cherry-pick $commit_id**
 
 ![image](https://github.com/user-attachments/assets/68ae819b-087e-4392-b010-51607580e4a6)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/91c5113a-ca85-4e41-bbaa-c37d231f16da)
+
 
 
 
