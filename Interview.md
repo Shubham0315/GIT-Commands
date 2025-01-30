@@ -52,9 +52,9 @@
   - These are typically used as central repos where other developers push/pull changes
   - There're no editable files in bare repo
 
-  - Non bare has working directory with editable actual files whereas bare ones dont, they'e only .git metadata
-  - Non-bare Used for local development, whereas bare is used for remote repos where changes are pushed/pulled but not directly modified
-  - In short, a bare repository is meant for storing and managing Git history (for remote use), while a non-bare repository (standard) is for actual development work.
+- Non bare has working directory with editable actual files whereas bare ones dont, they'e only .git metadata
+- Non-bare Used for local development, whereas bare is used for remote repos where changes are pushed/pulled but not directly modified
+- In short, a bare repository is meant for storing and managing Git history (for remote use), while a non-bare repository (standard) is for actual development work.
 
 10. How to revert a commit that is already pushed and made public?
 - a. Revert a commit :- It creates a new commit that undoes changes introduced by previous commit
