@@ -46,11 +46,11 @@
 
   ![image](https://github.com/user-attachments/assets/f9952541-c526-49d9-b5a9-f8be79a351c7)
   
-  - b. Bare repo
-    - Command :- git init --bare
-    - It doesnt contain working directory with files that you can edit. Instead it only stores git metadata (.git folder) but not with actual project files
-    - These are typically used as central repos where other developers push/pull changes
-    - There're no editable files in bare repo
+- b. Bare repo
+  - Command :- git init --bare
+  - It doesnt contain working directory with files that you can edit. Instead it only stores git metadata (.git folder) but not with actual project files
+  - These are typically used as central repos where other developers push/pull changes
+  - There're no editable files in bare repo
 
   - Non bare has working directory with editable actual files whereas bare ones dont, they'e only .git metadata
   - Non-bare Used for local development, whereas bare is used for remote repos where changes are pushed/pulled but not directly modified
