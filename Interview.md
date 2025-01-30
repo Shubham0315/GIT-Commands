@@ -25,7 +25,7 @@
 7. Download any remote repo to local
 - Command :- **git clone $URL**
 
-![image](https://github.com/user-attachments/assets/06625177-d59e-4a66-bb13-05f2a4547183)
+![image](https://github.com/user-attachments/assets/943a28b6-bbf8-4f00-a1c2-01225f1bd04d)
 ![image](https://github.com/user-attachments/assets/0d82ff0e-8c5d-4b75-b75e-95f3c77add2b)
 
 - Even if there is no local repository available and we want to download remote projects, we can clone it, it creates local repo for us.
