@@ -79,6 +79,7 @@
 - It allows to modify files by switching to other branch to work on something else.
 - This saves our uncommitted changes so that we can work on something else or switch branches without losing our progress.
   - We can also apply the stashed changes to our working directory and also do a "pop" to remove stash entry adter applying the changes
+  - If we want to continue working where we left work **git stash apply** is used to bring back saved changes onto our current working directory
 
 13. Commands to remove files in git
 - **git rm file** :- from workspace and staging
@@ -100,11 +101,12 @@
 - 3 modes :- hard, soft, mixed --> all explained
 
 16. Explain git branching commands
-- git branch :- to view available branches
-- git branch $branch :- to create new branch from master
-- git checkout $branch :- switch branch
-- git checkout -b $branch :- to create new branch and switch to it
-- git branch -d $branch :- to delete branch
+- **git branch** :- to view available branches
+- **git branch $branch** :- to create new branch from master
+- **git checkout $branch** :- switch branch
+- **git checkout -b $branch** :- to create new branch and switch to it
+- **git branch -d $branch** :- to delete branch in local
+- **git push origin --delete branch-name** :- Remote branch deletion
 
 17. Explain git merging techniques
 - Fast forward merge and 3 way merge
@@ -128,17 +130,86 @@
 - Merge Can be used for 3 way or FF while rebase only for FF
 
 22. How to find list of files that have been changed in specific commit?
-- Command :- git diff-tree -r $commit_id
+- Command :- **git diff-tree -r $commit_id**
   - -r allows command to list individual files
 
 ![image](https://github.com/user-attachments/assets/c7ecad11-5f34-402d-80c8-161ed5a1b233)
 
 23. Difference between git and SVN
-- 
+- Git is distributed whereas SVN is centralized VCS
+- In git clients can clone entire repo on local while in SVN version histroy is stored on server side of repo
+- Using git we can do offline commits as well while in SVN only online commits are allowed (using network)
+- In git push/pull operations are faster while on SVN they're slower
 
+24. What is a conflict in git?
+- Git conflict occurs when git is unable to automatically merge changes between two branches as both branches have modifications to same part of code that cannot be reconciled automatically
+- Even if a file is deleted in one branch and edited in other, conflict arises
 
+25. What is subgit?
+- It is tool for SVN to git migration
+- It can create writable git mirror of local or remote SVN repo and use both SVN and git as long as you like
 
+26. What is staging area or index?
+- It is virtual layer between workspace and local where we can add files and make them tracked
+- Before completing commits, any change can be formatted and reviewed in intermediate area which is "**STAGING**"
 
+27. What is git is-tree?
+- This command is used to display contents of tree object which represent snapshot of file structure in a commit. It shows files and directories that're part of specific commit or tree object in git repo
+- Command :- git ls-tree $commit_id $path
+- blob represents a file, tree represents a directory.
+
+![image](https://github.com/user-attachments/assets/d3165fc2-c80c-433b-bab4-5e89701ca4ef)
+
+28. What work is restored when deleted branch is recovered?
+- Files which were stashed and saved in stash index list will be recovered back
+- Any untracked files will be lost
+
+29. Use of git config
+- git uses our username to associate commits with identity
+- **git config** :- used to change git config including username
+  - **git config --global user.name "name"/ user.mail "email"**
+
+30. What are different branching strategies?
+- **master branch** :- main branch for production code
+- **feature branch** :- contains feature specific changes merged to master
+- **release branch** :- Once developed branch has all features for release we can clone it to release. It is used for next release cycle and no new features are added. Once it is ready to ship, it gets merged with master with version
+
+31. How to check if branch is already merged to master?
+- **git branch --merged** :- lists branches merged into current branches
+- **git branch --no-merged** :- lists branches not merged to current
+
+![image](https://github.com/user-attachments/assets/d2de4e45-0e42-4027-90ad-6b8792f45c5e)
+
+32. Why it is recommended to create additional commits rather than amending existing commit?
+- Amend operation destroys state that was previous saved in a commit. Growth of small commit and acquire unrelated changes
+
+33. What does hook comprises of in git?
+- Hooks are scripts that run automatically at certain points in git workflow. They're used to trigger actions before or after certain git events such as commenting, merging, pushing.
+- Hooks allows to automate tasks
+- Located in .git/hooks within local.
+
+![image](https://github.com/user-attachments/assets/9df37ad5-79b7-4250-8eaa-037f65b37a12)
+
+34. Explain git workflow
+- To record history of project, git workflow employs 2 parallel long running branches :- **master and development**
+- master branch is for production and hotfix
+- development branch is for development of feature
+
+35. Difference between revert and reset
+- Reset is used to return entire working tree to last committed state. This scraps commits in private branch or throw away uncommitted changes. It also alters existing commit history
+- Revert creates new commit that undergoes changes from previous commits. It adds new history to project, doesnt modify history
+
+36. How to squash last N commits into single commit?
+- To squash last N commits into single commit in git, you can use interactive rebase. It allows to combine multiple commits into one while preserving cleaner commit history.
+- If we want to write new commit message from scratch :- git reset --fost HEAD N
+
+37. git cherry pick
+- Used to introduce particular commit from one branch within repo onto diff branch
+- Used to forward or revert commits from maintenance branch to dev branch
+- Command :- **git cherry-pick $commit_id**
+
+![image](https://github.com/user-attachments/assets/68ae819b-087e-4392-b010-51607580e4a6)
+![Uploading image.png…]()
 
 
 
