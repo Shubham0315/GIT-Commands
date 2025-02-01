@@ -266,10 +266,10 @@
 ![image](https://github.com/user-attachments/assets/45557cfa-adf3-439a-8066-ed38725e5125)
 ![image](https://github.com/user-attachments/assets/63eed497-6543-4ac2-9669-368d0f5e8f93)
   
+- To resolve conflict in PR :- First fetch the changes locally, create new branch, resolve conflicts, commit changes, push branch and update PR
 
-
-
-
+45. To list all configure remote repos in GIT
+- git remote -v
 
 
 
