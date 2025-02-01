@@ -201,7 +201,7 @@
 
 36. How to squash last N commits into single commit?
 - To squash last N commits into single commit in git, you can use interactive rebase. It allows to combine multiple commits into one while preserving cleaner commit history.
-- If we want to write new commit message from scratch :- git reset --fost HEAD N
+- If we want to write new commit message from scratch :- git reset --soft HEAD N
 
 37. git cherry pick
 - Used to introduce particular commit from one branch within repo onto diff branch
@@ -211,8 +211,46 @@
 ![image](https://github.com/user-attachments/assets/68ae819b-087e-4392-b010-51607580e4a6)
 ![image](https://github.com/user-attachments/assets/91c5113a-ca85-4e41-bbaa-c37d231f16da)
 
+38. What are git workflows?
+- Git workflow define structure ways for teams to collaborate on software development using git
+  - **Centralised workflow** :- All changes are pushed to main/master branch. Developer pull from main branch and commit directly. Not ideal for large teams due to conflicts
+  - **Feature branch workflow** :- Each new feature is developed in separate branch. Developers push changes to feature branches and merge them into main branch after approval. It reduces conflicts and keep main branch stable
+  - **Gitflow workflow** :- Uses multiple branches like main(for stable prod code), developer(integration branch), feature(for new features), release(for prod release), hotfix(for urgent prod fixes). Its good for projects with scheduled releases
+  - **Github flow** :- Work directly from main branch. Create feature branches and open Pull requests(PRs). Merge PRs after review and deploy (Ideal for CICD)
+  - **Forking workflow** :- Used in open source projects. Developers fork repo, make changes in the copy and submit PR to main repo. Maintainers review and merge PRs
+  - **Trunk based development** :- Developers work directly on main branch . Frequent integration prevents large merge conflicts. Works well with feature flags and CICD
+ 
+39. Git bisect to determine source of bug?
+- git bisect is a poweful git command used to find commit that introduced a bug by performing binary search between a known good commit and a bad commit. It automates process of checking commits to pinpoint the first one that introduced an issue.g
+- Its a process explained below starting with **git bisect start**
 
+![image](https://github.com/user-attachments/assets/81c70dae-c982-47b8-bb52-4ed6ad9f22fb)
 
+40. git reflog
+- git reflog (reference log) is a command that tracks updates to the tip of branches, HEAD and other references, allowing us to recover lost commits, reset branches or inspect recent changes
+- **Recover lost commits** :- If you've mistakenly reset or deleted a branch, it helps find commit SHA to restore it
+
+![image](https://github.com/user-attachments/assets/7152bf42-de02-48f4-9a6d-4413dc22c531)
+
+- **View recent branch checkouts and changes** :- git reflog
+- **Restore deleted branches** :- If we've deleted branch, find its last commit using git reflog and create new branch from it
+
+![image](https://github.com/user-attachments/assets/3cd12e33-20f0-41cd-894d-9da3e10eb8df)
+
+41. How to recover deleted branch?
+- Using git reflog command to get history of commits, identify history stamp
+- Use above que
+
+42. What is the purpose of git tags?
+- Git tags are used to mark specific points in your git history, often for releases.
+- Unlike branches tags dont change, they're permanant references to commits
+  - List tags :- git tag
+  - View tag details :- git show v1.0
+  - Tag specific commit :- git tag v1.0
+  - Pushing tags to remote :- git push origin v1.0 (git push --tags to push all tags)
+  - Delete local tag :- git tag -d v1.0
+  - Delete remote tag :- git push origin --delete v1.0
+  - Checkout the tag :- git checkout v1.0
 
 
 
