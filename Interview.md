@@ -252,8 +252,20 @@
   - Delete remote tag :- git push origin --delete v1.0
   - Checkout the tag :- git checkout v1.0
 
+43. To change remote repo URL in git
+- git remote set-url >remote-repo> <new-url>
 
+44. Pull Request in GitHub?
+- It is a way to propose changes to a repo. It allows developers to review, discuss and merge code changes before adding them back to main branch
+- Process:-
+  - Create new branch - create file add and commit - git push origin feature branch
+  - Now naviagte to github repo - Compare and pull request - select base branch(main) and compare branch(feature) - Create PR
+  - Review and approve PR - Merge the PR
 
+![image](https://github.com/user-attachments/assets/6c5e3eb3-59a7-4c85-b69f-d95c6c3c0551)
+![image](https://github.com/user-attachments/assets/45557cfa-adf3-439a-8066-ed38725e5125)
+![image](https://github.com/user-attachments/assets/63eed497-6543-4ac2-9669-368d0f5e8f93)
+  
 
 
 
