@@ -1,3 +1,4 @@
+
 # GIT Branching
 
 - When we create files, do commits they get stored in master branch. When we create local repository, master branch will be created.
