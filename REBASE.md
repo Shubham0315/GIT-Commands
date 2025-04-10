@@ -7,7 +7,7 @@
 
 - In reabse no merge commit is created but in 3 way new merge commit is created
 
-**Rebase is 2 step process** :- Rebase feature on top of master and Merge feature to master branch
+**Rebase is 2 step process** :- Add feature on top of master and Merge feature to master branch
 
 
 Add feature on top of master
