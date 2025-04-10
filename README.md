@@ -47,6 +47,7 @@ GIT Architecture and Workflow
 **1. Working Directory (Workspace)**
 - Location where actual project files are present
 - Files here are called untracked files
+- It is location on developer's local machine
 
 **2. Staging area**
 - We cannot commit the files from workspace into local repository (1st stage to 3rd). It should go through staging area
