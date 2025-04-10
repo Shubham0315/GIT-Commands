@@ -68,7 +68,7 @@
 
   ![image](https://github.com/user-attachments/assets/a8ce741b-aedc-4bbb-a6ea-e0985474dad7)
 
-- **git push** :- does everything fit fetch does and auto merges fetched changes into current local branch. Updates our working directory and commits, bringing local branch up to date with remote branch.
+- **git pull** :- does everything fit fetch does and auto merges fetched changes into current local branch. Updates our working directory and commits, bringing local branch up to date with remote branch.
   - Command :- **git pull origin master**
  
   ![image](https://github.com/user-attachments/assets/73e71175-f6ee-4044-8eda-2afbc27c757c)
