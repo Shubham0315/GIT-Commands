@@ -2,7 +2,7 @@
 
 - If developer is working on diff features (f1,f2,f3) and he keeps on updating the code from f1 to f3. He doesnt maintain any copy of f1 or f2. When f3 is developed but client doesn't want f3 he instead want f1. So here we cannot get the previous version if we dont have version control system
 - If multiple developers are working of different features and they have to merge all the changes in one single software, there will be conflicts in changes implemented/written. So without version control system, we cannot determine who has implemented which part.
-- When multiple developers are working on same code, we need to have tracking of code whom have written what. Tis is done by VCS (Version Control system)
+- When multiple developers are working on same code, we need to have tracking of code whom have written what. This is done by VCS (Version Control system)
 
 Uses of VCS
 -
