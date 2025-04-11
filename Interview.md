@@ -44,7 +44,6 @@ How to push file from local to GitHub?
 - Push files from local to remote :- **git push origin master**
 
 ![image](https://github.com/user-attachments/assets/3fdd36d2-40e6-47f4-b821-e655324bed21)
-![image](https://github.com/user-attachments/assets/f3e097a2-efa2-4936-80e4-e8338851c202)
 
 How is bare repo different from standard way of initializing a git repo?
 -
