@@ -335,7 +335,7 @@ To list all configure remote repos in GIT
 -
 - git remote -v
 
-46. What’s the difference between git clone and git fork?
+What’s the difference between git clone and git fork?
 - 
 - Both're used to copy a repository
 
