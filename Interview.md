@@ -67,9 +67,16 @@ How is bare repo different from standard way of initializing a git repo?
 
 How to revert a commit that is already pushed and made public?
 -
-- a. Revert a commit :- It creates a new commit that undoes changes introduced by previous commit
+- Revert a commit
+  - It creates a new commit that undoes changes introduced by previous commit
+  - Preserves commit history making it ideal for public/shared branches
   - Steps :- Identify commit hash --> revert commit (git revert $commit_hash) --> push the reverted commit (git push)
-- b. Reset previous commit :- If we want to remove the commit history completely , use git reset. Not recommended as it rewrites history
+  - git log --oneline
+  - git revert $commit
+  - git push origin main
+ 
+
+- Reset previous commit :- If we want to remove the commit history completely , use git reset. Not recommended as it rewrites history
   - Steps :- Identify commit to reset (git log) --> reset that commit (git reset --hard $commit_id) --> force push the changes (git push origin branch --force)
 
 Git fetch and Git pull
