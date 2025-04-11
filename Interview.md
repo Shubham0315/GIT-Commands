@@ -63,13 +63,21 @@
   - Steps :- Identify commit to reset (git log) --> reset that commit (git reset --hard $commit_id) --> force push the changes (git push origin branch --force)
 
 11. Git fetch and Git pull
-- **git fetch** :- downloads new commits and updates remote branches without modifying our working directory or local branches. Doesnt integrate remote changes into current work without affecting local branch
-  - Command :- **git fetch origin**
+- **git fetch**
+  - Downloads new cdata (commits, branches, tags) from remote repository
+  - Doesn't merge or modify local working files or local branches
+  - We've to manually merge fetched changes
+  -  downloads new commits and updates remote branches without modifying our working directory or local branches. Doesnt integrate remote changes into current work without affecting local branch
+  - Command :- **git fetch origin** and then **git merge origin**
+  - It is best when we want to review changes before merging
 
   ![image](https://github.com/user-attachments/assets/a8ce741b-aedc-4bbb-a6ea-e0985474dad7)
 
-- **git pull** :- does everything fit fetch does and auto merges fetched changes into current local branch. Updates our working directory and commits, bringing local branch up to date with remote branch.
+- **git pull** :-
+  - Does everything fit fetch does and auto merges fetched changes into current local branch.
+  - Updates our working directory and commits, bringing local branch up to date with remote branch. Auto integrate the changes
   - Command :- **git pull origin master**
+  - It is best to quickly sync local branch with remote one
  
   ![image](https://github.com/user-attachments/assets/73e71175-f6ee-4044-8eda-2afbc27c757c)
 
@@ -271,6 +279,8 @@
 45. To list all configure remote repos in GIT
 - git remote -v
 
+46. What’s the difference between git clone and git fork?
+- 
 
 
 
